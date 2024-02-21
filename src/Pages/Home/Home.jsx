@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='h-screen'>
       <Header />
-      <HomeSection />
+      <HomeSection  />
     </div>
   )
 }

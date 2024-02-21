@@ -2,11 +2,11 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <div className='h-svh bg-white p-10 lg:p-28 md:p-24 space-y-20' id='skills'>
+        <div className={` h-svh bg-white p-10 lg:p-28 md:p-24 space-y-20`} id='skills'>
             <h1 className='text-center font-bold text-5xl tracking-wider'>Skills</h1>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12'>
-                <div className='border-2 border-gray-900 p-4 rounded-xl'>
+                <div className='border-2 dark:border-gray-400 border-gray-900 p-4 rounded-xl'>
                     <h1 className='pl-4 text-3xl font-bold mb-4'>Frontend</h1>
                     <div className='flex flex-wrap gap-3'>
                         <span className='p-2 border border-gray-600 rounded-xl'>HTML</span>
@@ -21,7 +21,7 @@ const Skills = () => {
                         <span className='p-2 border border-gray-600 rounded-xl'>Typescript</span>
                     </div>
                 </div>
-                <div className='border-2 border-gray-900 p-4 rounded-xl'>
+                <div className='border-2 dark:border-gray-400 border-gray-900 p-4 rounded-xl'>
                     <h1 className='pl-4 text-3xl font-bold mb-4'>Backend</h1>
                     <div className='flex flex-wrap gap-3'>
                         <span className='p-2 border border-gray-600 rounded-xl'>Node Js</span>
@@ -32,7 +32,7 @@ const Skills = () => {
 
                     </div>
                 </div>
-                <div className='border-2 border-gray-900 p-4 rounded-xl'>
+                <div className='border-2 dark:border-gray-400 border-gray-900 p-4 rounded-xl'>
                     <h1 className='pl-4 text-3xl font-bold mb-4'>Devops</h1>
                     <div className='flex flex-wrap gap-3'>
                         <span className='p-2 border border-gray-600 rounded-xl'>Git</span>

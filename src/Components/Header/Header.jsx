@@ -1,29 +1,29 @@
 import React, { useState } from 'react'
 import { BiListUl } from "react-icons/bi";
 import { Link } from "react-scroll"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 
 
-const Header = () => {
+const Header = ({ }) => {
     const [open, setOpen] = useState(false)
     return (
-        <div className={` h-1/6 flex flex-col`}>
+        <div className={` h-1/6  flex flex-col `}>
             <nav className='dark:bg-gray-900 dark:text-white flex flex-row gap-8 justify-evenly items-center p-5'>
                 <div>
                     <span className='text-4xl max-sm:text-2xl font-semibold'>Mohammed Nihal VK</span>
                 </div>
                 <motion.div className='sm:hidden'
-                 whileHover={{
-                   scale: 1.1,
-                   transition: { duration: 0.5 },
-                 }}
+                    whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.5 },
+                    }}
 
                 >
                     <BiListUl size={45} onClick={() => setOpen(!open)} />
                 </motion.div>
                 <div className='max-sm:hidden '>
-                    <ul className='flex flex-row space-x-8 text-2xl cursor-pointer'>
+                    <ul className='flex flex-row space-x-8 text-2xl cursor-pointer items-center justify-center'>
                         <li>
                             <Link
                                 to='about_me'
@@ -43,7 +43,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link
-                                to='Projects'
+                                to='projects'
                                 span={true}
                                 smooth={true}
                                 className='hover:text-gray-600 hover:underline-offset-8 hover:underline '
@@ -54,10 +54,11 @@ const Header = () => {
                                 to='contact_me'
                                 span={true}
                                 smooth={true}
-                                className='hover:text-gray-600 hover:underline-offset-8 hover:underline  ' href="">
+                                className='hover:text-gray-600 hover:underline-offset-8 hover:underline ' href="">
                                 Contact</Link>
 
                         </li>
+
                     </ul>
                 </div>
 

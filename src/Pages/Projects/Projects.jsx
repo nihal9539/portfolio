@@ -6,13 +6,13 @@ const Projects = () => {
     const transition = { type: 'spring', duration: 2,scale:0 }
 
     return (
-        <div className='min-h-svh bg-white p-10 lg:p-28 md:p-24 space-y-20' id='projects'>
-            <h1 className='text-center font-bold text-5xl tracking-wider'>Projects</h1>
+        <div className={` min-h-svh bg-white p-10 lg:p-28 md:p-24 space-y-20`} id='projects'>
+            <h1 className='text-center font-bold text-5xl tracking-wider '>Projects</h1>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10'
 
             >
-                <motion.div className='border-2 border-gray-900 space-y-6 p-1 pb-5 rounded-xl'
+                <motion.div className='border-2 border-gray-900 dark:text-white space-y-6 p-1 pb-5 rounded-xl'
                    initial={{ scale:0.85}}
                    whileInView={{scale:1}}
                    transition={{ ...transition, duration: 2.5 }}
@@ -28,7 +28,7 @@ const Projects = () => {
                     </div>
 
                 </motion.div>
-                <motion.div className='border-2 border-gray-900 space-y-6 p-1 pb-5 rounded-xl'
+                <motion.div className='border-2 border-gray-900 dark:text-white space-y-6 p-1 pb-5 rounded-xl'
                     initial={{ scale:0.85}}
                     whileInView={{scale:1}}
                     transition={{ ...transition, duration: 2.5 }}
@@ -46,7 +46,7 @@ const Projects = () => {
                 </motion.div>
 
 
-                <motion.div className='border-2 border-gray-900 space-y-6 p-1 pb-5 rounded-xl'
+                <motion.div className='border-2 border-gray-900 dark:text-white space-y-6 p-1 pb-5 rounded-xl'
                      initial={{ scale:0.85}}
                      whileInView={{scale:1}}
                      transition={{ ...transition, duration: 2.5 }}>
