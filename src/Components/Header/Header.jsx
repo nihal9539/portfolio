@@ -5,14 +5,20 @@ import { motion } from "framer-motion"
 
 
 
-const Header = ({ }) => {
+const Header = () => {
     const [open, setOpen] = useState(false)
+    const transition = { type: 'spring', duration: 2 }
+
     return (
         <div className={` h-1/6  flex flex-col `}>
-            <nav className='dark:bg-gray-900 dark:text-white flex flex-row gap-8 justify-evenly items-center p-5'>
-                <div>
-                    <span className='text-4xl max-sm:text-2xl font-semibold'>Mohammed Nihal VK</span>
-                </div>
+            <nav className=' flex flex-row gap-8 justify-evenly items-center p-5'>
+                <motion.div
+                    initial={{ x: -50, opacity: 0.5, scale: 0.5 }}
+                    whileInView={{ x: 0, opacity: 1, scale: 1 }}
+                    transition={{ ...transition, duration: 4 }}
+                >
+                    <span className='text-4xl max-sm:text-2xl md:text-3xl font-semibold'>Mohammed Nihal VK</span>
+                </motion.div>
                 <motion.div className='sm:hidden'
                     whileHover={{
                         scale: 1.1,
@@ -22,8 +28,13 @@ const Header = ({ }) => {
                 >
                     <BiListUl size={45} onClick={() => setOpen(!open)} />
                 </motion.div>
-                <div className='max-sm:hidden '>
-                    <ul className='flex flex-row space-x-8 text-2xl cursor-pointer items-center justify-center'>
+                <motion.div
+                    initial={{ opacity: 0.5, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ ...transition, duration: 4 }}
+
+                    className='max-sm:hidden '>
+                    <ul className='flex flex-row space-x-8 lg:text-2xl md:text-xl cursor-pointer items-center justify-center'>
                         <li>
                             <Link
                                 to='about_me'
@@ -60,11 +71,11 @@ const Header = ({ }) => {
                         </li>
 
                     </ul>
-                </div>
+                </motion.div>
 
             </nav>
-            <div className={`${open ? "" : "hidden "} z-20`}>
-                <ul className='transition-all ease-in-out duration-700 flex flex-col justify-center items-center gap-32 text-4xl font-semibold  h-svh  bg-white '>
+            <div className={`${open ? " bg-red-200 right-0    top-20 relative " : "hidden  -right-96 transition-all ease-out duration-1000 "} z-20`}>
+                <ul className=' flex  right-0 flex-col justify-center items-center gap-20 text-4xl font-semibold pb-96 h-svh  bg-white '>
                     <li>
                         <Link
                             to='about_me'

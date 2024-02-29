@@ -5,11 +5,10 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 
 
-const HomeSection = ({DarkTheme,setDarkTheme}) => {
-    console.log(DarkTheme);
+const HomeSection = () => {
     return (
-        <div className={`flex ${DarkTheme ? "dark bg-gray-900 text-white":""}  md:flex-row lg:p-20 lg:px-36 md:p-0  max-sm:flex-col  justify-center max-sm:gap-8 lg:gap-56 w-full md:gap-56 items-center h-5/6 `}>
-            <div className='lg:w-1/2 md:w-full sm:w-ful'>
+        <div className={`flex  text-white"  md:flex-row lg:p-20 lg:px-36 md:p-2  max-sm:flex-col  justify-center max-sm:gap-8 lg:gap-56 w-full md:gap-2 items-center h-5/6 `}>
+            <div className='lg:w-1/2 md:w-full sm:w-ful '>
                 <img className='m-auto  rounded-full w-96 h-96' src="./IMG_6732 (1).jpg" alt="" />
             </div>
             <div className='lg:w-1/2 md:w-full sm:w-full '>

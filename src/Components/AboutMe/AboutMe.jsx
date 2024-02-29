@@ -17,13 +17,13 @@ const AboutMe = () => {
                     </div>
 
                     <div className=' w-full lg:gap-20  md:gap-10 sm:gap-10 max-sm:gap-10 grid grid-cols-1'>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-16 md:gap-10 sm:gap-10 max-sm:gap-10 w-full'>
-                            <div className='border border-gray-800 rounded-xl p-4 flex flex-col justify-center items-center '>
+                        <div className='grid  place-items-center  md:grid-cols-1 sm:grid-cols-1 lg:gap-16 md:gap-10 sm:gap-10 max-sm:gap-10 w-full'>
+                            {/* <div className='border border-gray-800 rounded-xl p-4 flex flex-col justify-center items-center '>
                                 <MdOutlineBadge size={35} />
                                 <h1 className='font-bold text-lg'>Experience</h1>
                                 <p>2+ years</p>
                                 <h1>Full Stack developer</h1>
-                            </div>
+                            </div> */}
                             <div className='border border-gray-800 rounded-xl justify-center  p-4 flex flex-col items-center'>
                                 <FaUserFriends size={35} />
                                 <h1 className='font-bold text-lg'>Education</h1>
