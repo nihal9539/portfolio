@@ -13,7 +13,7 @@ const AboutMe = () => {
         <img className='rounded-xl m-auto w-7/12'  src="./IMG_6732 (1).jpg" alt="" />
     </div> */}
                     <div>
-                        <span className='text-xl font-semibold'>I am a self-taught full-stack developer who loves solving problems digitally with top-notch technologies. I create websites with clean and optimized code, building scalable, secure, and user-friendly websites. Let's work together to turn your ideas into reality.</span>
+                        <span className='text-xl font-semibold'>I am a  full-stack developer who loves solving problems digitally with top-notch technologies. I create websites with clean and optimized code, building scalable, secure, and user-friendly websites. Let's work together to turn your ideas into reality.</span>
                     </div>
 
                     <div className=' w-full lg:gap-20  md:gap-10 sm:gap-10 max-sm:gap-10 grid grid-cols-1'>

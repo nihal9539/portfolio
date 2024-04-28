@@ -42,7 +42,7 @@ const ContactMe = () => {
 
     window.addEventListener('scroll', toggleVisible);
     return (
-        <div className={` h-svh lg:p-20 md:p-12 max-sm:pt-28   space-y-10`} id='contact_me'>
+        <div className={`  lg:p-20 md:p-12 max-sm:pt-28   space-y-10 `} id='contact_me'>
             <div onClick={scrollToTop} style={style}  className=' fixed bottom-14 right-14   hover:scale-110  place-items-center grid cursor-pointer border border-gray-500 rounded-full   duration-200 p-1'><div className='bg-white dark:bg-gray-900 border-gray-500 border block rounded-full ' style={{ height: "calc(100% - 15px)" }}><MdKeyboardDoubleArrowUp    size={40} /></div></div>
 
             <h1 className='text-center text-4xl font-bold'>Contact me </h1>
@@ -81,7 +81,7 @@ const ContactMe = () => {
 
 
             <div className='flex justify-center'>
-                <hr class="w-11/12 bg-black h-0.5  " />
+                <hr class="w-11/12 bg-black h-0.5 " />
             </div>
 
             <div className=' flex justify-center max-sm:gap-10 md:gap-28 lg:gap-44 max-sm:px-2'>

@@ -4,7 +4,7 @@ import HomeSection from '../../Components/HomeSection/HomeSection'
 
 const Home = () => {
   return (
-    <div className='h-screen'>
+    <div className='h-screen flex justify-center items-center '>
       <Header />
       <HomeSection  />
     </div>

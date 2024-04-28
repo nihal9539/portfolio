@@ -10,29 +10,24 @@ const Header = () => {
     const transition = { type: 'spring', duration: 2 }
 
     return (
-        <div className={` h-1/6  flex flex-col `}>
-            <nav className=' flex flex-row gap-8 justify-evenly items-center p-5'>
-                <motion.div
-                    initial={{ x: -50, opacity: 0.5, scale: 0.5 }}
-                    whileInView={{ x: 0, opacity: 1, scale: 1 }}
-                    transition={{ ...transition, duration: 4 }}
+        <div className={`  flex flex-col fixed top-0 w-full bg-white border-b z-50`}>
+            <nav className=' flex flex-row gap-8  justify-between px-44 items-center p-5'>
+                <div
+                
                 >
                     <span className='text-4xl max-sm:text-2xl md:text-3xl font-semibold'>Mohammed Nihal VK</span>
-                </motion.div>
-                <motion.div className='sm:hidden'
-                    whileHover={{
-                        scale: 1.1,
-                        transition: { duration: 0.5 },
-                    }}
+                </div>
+                <div className='sm:hidden'
+                    // whileHover={{
+                    //     scale: 0.9,
+                    //     transition: { duration: 0.5 },
+                    // }}
 
                 >
                     <BiListUl size={45} onClick={() => setOpen(!open)} />
-                </motion.div>
-                <motion.div
-                    initial={{ opacity: 0.5, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ ...transition, duration: 4 }}
-
+                    
+                </div>
+                <div
                     className='max-sm:hidden '>
                     <ul className='flex flex-row space-x-8 lg:text-2xl md:text-xl cursor-pointer items-center justify-center'>
                         <li>
@@ -41,7 +36,7 @@ const Header = () => {
                                 span={true}
                                 smooth={true}
 
-                                className='hover:text-gray-600 hover:underline-offset-8 hover:underline '
+                                className='hover:text-gray-600 hover:origin-right hover:underline-offset-8 hover:underline '
                             >About</Link>
                         </li>
                         <li>
@@ -71,7 +66,7 @@ const Header = () => {
                         </li>
 
                     </ul>
-                </motion.div>
+                </div>
 
             </nav>
             <div className={`${open ? " bg-red-200 right-0    top-20 relative " : "hidden  -right-96 transition-all ease-out duration-1000 "} z-20`}>

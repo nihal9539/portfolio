@@ -28,6 +28,7 @@ const Skills = () => {
                         <span className='p-2 border border-gray-600 rounded-xl'>Express Js</span>
                         <span className='p-2 border border-gray-600 rounded-xl'>Mongo DB</span>
                         <span className='p-2 border border-gray-600 rounded-xl'>MySQL</span>
+                        <span className='p-2 border border-gray-600 rounded-xl'>PostgreSQL</span>
                         <span className='p-2 border border-gray-600 rounded-xl'>Firebase</span>
 
                     </div>
