@@ -3,21 +3,19 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
-import CV from "../../assets/MOHAMMED NIHAL V K - MERN STACK DEVELOPER.pdf"
-
+import CV from "../../assets/MOHAMMED NIHAL V K - MERN STACK DEVELOPER.pdf";
+import "./HomeSection.css";
 const HomeSection = () => {
   return (
-    <div
-      className={`flex  text-white"  md:flex-row lg:p-20 lg:px-36 md:p-2  max-sm:flex-col  justify-center max-sm:gap-8 lg:gap-56 w-full md:gap-2 items-center h-5/6 `}
-    >
-      <div className="lg:w-1/2 md:w-full sm:w-ful ">
+    <div className={`grid lg:grid-cols-2 items-center md:grid-cols-2 sm:grid-cols-1 gap-14 lg:px-10 `}>
+      <div className=" ">
         <img
-          className="m-auto  rounded-full w-96 h-96"
+          className="m-auto a  rounded-full w-96 h-96 max-md:w-64  max-md:h-64"
           src="./IMG_6732 (1).jpg"
           alt=""
         />
       </div>
-      <div className="lg:w-1/2 md:w-full sm:w-full ">
+      <div className="  ">
         <div className="flex flex-col items-center  gap-2">
           <h1 className="text-lg font-semibold">Hello, I'm</h1>
           <TypeAnimation
@@ -34,8 +32,12 @@ const HomeSection = () => {
             style={{ fontSize: "2rem", display: "block", fontWeight: "bold" }}
           />
 
-          <div className="space-x-2 text-sm">
-            <a download href={CV} className="p-2.5 px-5 dark:border-white border-black border rounded-3xl font-semibold">
+          <div className="space-x-2 pt-4 text-sm">
+            <a
+              download
+              href={CV}
+              className="p-2.5 px-5 dark:border-white border-black border rounded-3xl font-semibold"
+            >
               Download CV
             </a>
             <Link
@@ -47,11 +49,10 @@ const HomeSection = () => {
               Contact Info
             </Link>
           </div>
-          <div className="flex flex-row gap-4 mt-3">
+          {/* <div className="flex flex-row gap-4 mt-3">
             <VscGithubInverted size={35} />
             <IoLogoLinkedin className="" size={35} />
-          
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

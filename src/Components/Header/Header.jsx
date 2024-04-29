@@ -11,25 +11,20 @@ const Header = () => {
 
     return (
         <div className={`  flex flex-col fixed top-0 w-full bg-white border-b z-50`}>
-            <nav className=' flex flex-row gap-8  justify-between px-44 items-center p-5'>
+            <nav className=' flex flex-row gap-8  justify-between px-44 max-lg:px-10 items-center p-5'>
                 <div
                 
                 >
                     <span className='text-4xl max-sm:text-2xl md:text-3xl font-semibold'>Mohammed Nihal VK</span>
                 </div>
-                <div className='sm:hidden'
-                    // whileHover={{
-                    //     scale: 0.9,
-                    //     transition: { duration: 0.5 },
-                    // }}
-
+                <div className='md:hidden'
                 >
                     <BiListUl size={45} onClick={() => setOpen(!open)} />
                     
                 </div>
                 <div
-                    className='max-sm:hidden '>
-                    <ul className='flex flex-row space-x-8 lg:text-2xl md:text-xl cursor-pointer items-center justify-center'>
+                    className='max-md:hidden '>
+                    <ul className='flex flex-row space-x-8 lg:text-xl md:text-xl cursor-pointer items-center justify-center'>
                         <li>
                             <Link
                                 to='about_me'
@@ -69,8 +64,8 @@ const Header = () => {
                 </div>
 
             </nav>
-            <div className={`${open ? " bg-red-200 right-0    top-20 relative " : "hidden  -right-96 transition-all ease-out duration-1000 "} z-20`}>
-                <ul className=' flex  right-0 flex-col justify-center items-center gap-20 text-4xl font-semibold pb-96 h-svh  bg-white '>
+            <div className={`${open ? " bg-red-200 right-0  transition-all ease-out duration-700  top-20 relative " : "hidden  -right-96 transition-all ease-out duration-1000 "} z-20`}>
+                <ul className=' flex  right-0 flex-col justify-center items-center gap-20  font-semibold pb-96 h-svh  bg-white '>
                     <li>
                         <Link
                             to='about_me'

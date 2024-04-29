@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { VscGithubInverted } from "react-icons/vsc";
+import  { useEffect, useState } from 'react'
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
-
+import instagram from "../../assets/icons/bxl-instagram.svg"
+import linkdin from "../../assets/icons/bxl-linkedin.svg"
+import whatsapp from "../../assets/icons/bxl-whatsapp.svg"
+import github from "../../assets/icons/bxl-github.svg"
 const ContactMe = () => {
     const [visible, setVisible] = useState(false)
     const scrolled = document.documentElement.scrollTop;
@@ -42,12 +44,12 @@ const ContactMe = () => {
 
     window.addEventListener('scroll', toggleVisible);
     return (
-        <div className={`  lg:p-20 md:p-12 max-sm:pt-28   space-y-10 `} id='contact_me'>
+        <div className={`  lg:p-20 lg:px-36 md:p-16 max-sm:pt-28   space-y-10 `} id='contact_me'>
             <div onClick={scrollToTop} style={style}  className=' fixed bottom-14 right-14   hover:scale-110  place-items-center grid cursor-pointer border border-gray-500 rounded-full   duration-200 p-1'><div className='bg-white dark:bg-gray-900 border-gray-500 border block rounded-full ' style={{ height: "calc(100% - 15px)" }}><MdKeyboardDoubleArrowUp    size={40} /></div></div>
 
             <h1 className='text-center text-4xl font-bold'>Contact me </h1>
 
-            <div className='p-10 max-sm:p-4'>
+            <div className=' max-sm:p-4'>
                 <form action="" className='w-full p-4 border rounded-lg border-gray-800 '>
                     <div className='flex lg:flex-row max-sm:flex-col md:flex-row w-full  justify-evenly p-2 gap-8'>
                         <div className='lg:w-1/2 sm:w-full md:w-full space-y-2'>
@@ -73,30 +75,37 @@ const ContactMe = () => {
 
                         </div>
                     </div>
+                    <div className='w-full p-2 flex justify-center'>
+
+                       <button className='p-4 px-20 w-1/3  bg-black text-white rounded-md'>Send Message </button>
+                    </div>
 
                 </form>
 
 
             </div>
-
-
             <div className='flex justify-center'>
-                <hr class="w-11/12 bg-black h-0.5 " />
+                <hr class="w-full bg-black/55 h-0.5 " />
             </div>
 
-            <div className=' flex justify-center max-sm:gap-10 md:gap-28 lg:gap-44 max-sm:px-2'>
+            <div className=' flex justify-evenly'>
 
 
                 <a href="https://www.instagram.com/_nihal_vk_" target='_blank'>
-                    <img src="./instagram.png" className='w-14 h-14' alt="" />
+                    <img src={instagram} className='w-14 h-14' alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/mohammed-nihal-v-k-a02045237/" target='_blank'>
-                    <img src="./linkedin.png" className='w-14 h-12' alt="" />
+                    <img src={linkdin} className='w-14 h-12' alt="" />
                 </a>
                 <a href="https://github.com/nihal9539" target="_blank">
 
-                    <VscGithubInverted className='w-14 h-12 dark:text-white'/>
+                <img src={github} className='w-14 h-12' alt="" />
                 </a>
+                <a href="https://api.whatsapp.com/send?phone=919539949151" target="_blank">
+                    <img src={whatsapp} className='w-14 h-12' alt="" />
+                </a>
+                
+
 
             </div>
         </div>
